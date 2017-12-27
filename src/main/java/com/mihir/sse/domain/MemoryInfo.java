@@ -1,4 +1,4 @@
-package com.mihir.springdemo;
+package com.mihir.sse.domain;
 
 public class MemoryInfo  {
 

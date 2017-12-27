@@ -1,5 +1,6 @@
-package com.mihir.springdemo;
+package com.mihir.sse.processors;
 
+import com.mihir.sse.domain.MemoryInfo;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
@@ -7,7 +8,6 @@ import org.springframework.stereotype.Service;
 import java.lang.management.ManagementFactory;
 import java.lang.management.MemoryMXBean;
 import java.lang.management.MemoryUsage;
-import java.sql.Time;
 
 @Service
 public class MemoryObserverJob {

@@ -1,4 +1,4 @@
-package com.mihir.springdemo;
+package com.mihir.sse;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
