@@ -18,7 +18,7 @@ public class MemoryObserverScheduleJob {
         this.eventPublisher = eventPublisher;
     }
 
-   // @Scheduled(fixedRate = 1000)
+    @Scheduled(fixedRate = 1000)
     public void printTime() {
         MemoryMXBean memBean = ManagementFactory.getMemoryMXBean();
         MemoryUsage heap = memBean.getHeapMemoryUsage();

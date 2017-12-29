@@ -4,7 +4,7 @@
     <title>Server Memory Monitor</title>
     <script>
         function initialize() {
-            const eventSource = new EventSource('http://localhost:8080/memory/ABC', {withCredentials : true});
+            const eventSource = new EventSource('http://localhost:8080/memory', {withCredentials : true});
 
             console.log("STATE : " + eventSource.readyState);
             eventSource.onmessage = e => {
