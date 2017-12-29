@@ -1,6 +1,6 @@
 package com.mihir.sse.configuration;
 
-import com.mihir.sse.processors.RedisService;
+import com.mihir.sse.processors.StudentDataManager;
 import com.mihir.sse.repository.StudentRepository;
 import com.mihir.sse.repository.StudentRepositoryImpl;
 import org.springframework.context.annotation.Bean;
@@ -28,8 +28,8 @@ public class SseDemoConfiguration {
     }
 
     @Bean
-    public RedisService redisService(){
-        return new RedisService();
+    public StudentDataManager redisService(){
+        return new StudentDataManager();
     }
 
 

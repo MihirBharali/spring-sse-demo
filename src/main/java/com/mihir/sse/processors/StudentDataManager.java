@@ -4,7 +4,7 @@ import com.mihir.sse.domain.Student;
 import com.mihir.sse.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
-public class RedisService {
+public class StudentDataManager {
 
     @Autowired
     private StudentRepository studentRepository;

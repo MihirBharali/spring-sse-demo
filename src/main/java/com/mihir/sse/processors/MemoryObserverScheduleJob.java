@@ -10,15 +10,15 @@ import java.lang.management.MemoryMXBean;
 import java.lang.management.MemoryUsage;
 
 @Service
-public class MemoryObserverJob {
+public class MemoryObserverScheduleJob {
 
     public final ApplicationEventPublisher eventPublisher;
 
-    public MemoryObserverJob(ApplicationEventPublisher eventPublisher) {
+    public MemoryObserverScheduleJob(ApplicationEventPublisher eventPublisher) {
         this.eventPublisher = eventPublisher;
     }
 
-    @Scheduled(fixedRate = 1000)
+   // @Scheduled(fixedRate = 1000)
     public void printTime() {
         MemoryMXBean memBean = ManagementFactory.getMemoryMXBean();
         MemoryUsage heap = memBean.getHeapMemoryUsage();
